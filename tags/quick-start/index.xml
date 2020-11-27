@@ -6,14 +6,17 @@
     <description>Recent content in Quick start on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shinji1992.github.io/tags/quick-start/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shinji1992.github.io/tags/quick-start/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Coming soon...</title>
+      <title>Customise MacBook Touch Bar</title>
       <link>https://shinji1992.github.io/blog/post_1/</link>
-      <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shinji1992.github.io/blog/post_1/</guid>
-      <description>Header1 Header2 Header3 text</description>
+      <description>Get a cool touch bar!  Follow the installation procedures on MTMR. Click the MTMR app -&amp;gt; &amp;ldquo;Open preset&amp;rdquo; on the menu bar. Open &amp;ldquo;items.json&amp;rdquo; Copy my items.json and paste it on your own itmes.json Bang! You got it!
+  If you want to customise more, look this link.
+Or if you want to add favourite pictures to your touch bar,
+ Open terminal. Navigate to the directory where your pictures are located.</description>
     </item>
     
   </channel>
