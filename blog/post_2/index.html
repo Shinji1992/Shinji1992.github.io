@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <title>Shinji Kaneko</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="" />
+<meta name="author" content="Shinji Kaneko" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.78.2" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">        <link rel="manifest" href="/site.webmanifest">        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/favicon.ico">        
+
+  <link
+    rel="stylesheet"
+    href="/css/bootstrap/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+  <link rel="stylesheet" href="/css/aafu_cumtom.css" />
+  <link rel="stylesheet" href="/css/aafu.css" />
+
+  <script>
+    var themeColor = document.querySelector("meta[name=theme-color]");
+    window.onload = () => {
+      themeColor.content = getComputedStyle(document.body)["background-color"];
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="container">
+    <main style="min-height: calc(100vh - 60px);">
+      
+      <div class="d-flex flex-row row p-2">
+  <h3 class="main-menu mr-3">
+    <a href="https://shinji1992.github.io/">Home</a>
+  </h3>
+  <h3 class="main-menu mr-3">
+    <a href="/blog">Blog</a>
+  </h3>
+  <h3 class="main-menu mr-3">
+    <a href="mailto:kaneko@campus.tu-berlin.de">Contact</a>
+  </h3>
+</div>
+
+      
+<div class="rounded p-2 aafu-border border">
+  <div class="border-bottom aafu-border">
+    <h1 class="top-h1" style="font-size: 2.75em;">Quick Guide Docker for Jupyter Notebook</h1><div class="mb-2">
+  <p class="mb-1">November 27, 2020</p>
+   
+  
+  
+  
+  <p class="metadata-value mb-1 taxa taxa-container-div list-tags">
+    Tags: 
+    <a
+      class="pl-1 pr-1 rounded border border-secondary"
+      href="/tags/quick-start"
+      title="tags"
+    >Quick start</a>
+    
+    <a
+      class="pl-1 pr-1 rounded border border-secondary"
+      href="/tags/jupyter-notebook"
+      title="tags"
+    >Jupyter Notebook</a>
+    
+  </p>
+  
+  
+</div>
+</div>
+  <div class="content">
+    <h2 id="docker-benefit">Docker Benefit</h2>
+<ul>
+<li>Version control (like Git)</li>
+<li>Easy to share your environment</li>
+<li>Keep cleaning on your laptop</li>
+</ul>
+<h2 id="quick-start-on-mac">Quick Start on Mac!!</h2>
+<ol>
+<li>Download <a href="https://www.docker.com/products/docker-desktop">Docker</a> on your laptop.</li>
+<li>Turn on Docker.</li>
+<li>Open terminal.</li>
+<li>Pull docker image (you can choose a desired image from <a href="https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html">HERE</a>). If you have no idea, do not worry! Just follow me :)</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">your_name:~$ docker pull jupyter/scipy-notebook
+</code></pre></div><ol start="5">
+<li>Create a file where you want to work.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">your_name:~$ mkdir FILE_NAME
+your_name:~$ cd FILE_NAME
+</code></pre></div><ol start="6">
+<li>Create a container.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">your_name:~$ docker run -d --name CONTAINER_NAME -p 8888:8888 -v <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span><span style="color:#e6db74">:/home/jovyan/work&#34;</span> jupyter/scipy-notebook
+</code></pre></div><ol start="7">
+<li>Open <a href="http://127.0.0.1:8888/tree?">Jupyter Notebook</a> or <a href="http://127.0.0.1:8888/lab?">Jupyter Lab</a>.<br>
+Bang Bang Bang!!!! Now you can use Jupyter Notebook!! Enjoy!!<br>
+Note: files/folders can be shared through FILE_NAME which you created.</li>
+<li>Stop your container.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">your_name:~$ docker stop CONTAINER_NAME
+</code></pre></div><p>Now you can shut down your laptop.</p>
+<h2 id="additional-information">Additional Information</h2>
+<ul>
+<li>Start Jupyter Notebook when you start to work again.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">your_name:~$ docker start CONTAINER_NAME
+</code></pre></div><ul>
+<li>If you cannot use some libraries/packages, install a desired library/package in your container!</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">your_name:~$ docker exec -it CONTAINER_NAME /bin/bash
+<span style="color:#f92672">(</span>base<span style="color:#f92672">)</span>jovyan@~:~$ pip LIBRARY/PACKGE_NAME
+<span style="color:#f92672">(</span>base<span style="color:#f92672">)</span>jovyan@~:~$ exit
+</code></pre></div><ul>
+<li>Check statement of containers.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">your_name:~$ docker ps -a
+</code></pre></div><ul>
+<li>Delete a container.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">your_name:~$ docker rm CONTAINER_ID
+</code></pre></div><ul>
+<li>Check statement of images.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">your_name:~$ docker images
+</code></pre></div><ul>
+<li>Delete a image.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">your_name:~$ docker rmi IMAGE_ID
+</code></pre></div>
+  </div>
+</div>
+<div class="d-flex flex-row justify-content-center">
+  <h3 class="mb-1 mt-1 text-left mr-4">
+    
+    <i class="nav-menu-disabled fas fa-chevron-circle-left"></i>
+    
+  </h3>
+  <h3 class="mb-1 mt-1 text-left ml-4">
+    
+    <a
+      href="/blog/post_1/"
+      title="Customise MacBook Touch Bar"
+    >
+      <i class="nav-menu fas fa-chevron-circle-right"></i>
+    </a>
+    
+  </h3>
+</div>
+
+
+    </main>
+    
+    <footer class=" mt-2 mb-4 text-center ">
+  <span class="markdownify"></span>
+  <span style="font-size:0px;">
+    &middot;
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </span>
+</footer>
+
+    
+  </body>
+</html>

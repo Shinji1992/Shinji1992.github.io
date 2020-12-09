@@ -19,5 +19,14 @@ Or if you want to add favourite pictures to your touch bar,
  Open terminal. Navigate to the directory where your pictures are located.</description>
     </item>
     
+    <item>
+      <title>Quick Guide Docker for Jupyter Notebook</title>
+      <link>https://shinji1992.github.io/blog/post_2/</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinji1992.github.io/blog/post_2/</guid>
+      <description>Docker Benefit  Version control (like Git) Easy to share your environment Keep cleaning on your laptop  Quick Start on Mac!!  Download Docker on your laptop. Turn on Docker. Open terminal. Pull docker image (you can choose a desired image from HERE). If you have no idea, do not worry! Just follow me :)  your_name:~$ docker pull jupyter/scipy-notebook Create a file where you want to work.  your_name:~$ mkdir FILE_NAME your_name:~$ cd FILE_NAME Create a container.</description>
+    </item>
+    
   </channel>
 </rss>
