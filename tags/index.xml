@@ -6,20 +6,11 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shinji1992.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Customisation</title>
-      <link>https://shinji1992.github.io/tags/customisation/</link>
-      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shinji1992.github.io/tags/customisation/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Wed, 09 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shinji1992.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jupyter Notebook</title>
       <link>https://shinji1992.github.io/tags/jupyter-notebook/</link>
-      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 09 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shinji1992.github.io/tags/jupyter-notebook/</guid>
       <description></description>
@@ -28,9 +19,18 @@
     <item>
       <title>Quick start</title>
       <link>https://shinji1992.github.io/tags/quick-start/</link>
-      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 09 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shinji1992.github.io/tags/quick-start/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Customisation</title>
+      <link>https://shinji1992.github.io/tags/customisation/</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinji1992.github.io/tags/customisation/</guid>
       <description></description>
     </item>
     
