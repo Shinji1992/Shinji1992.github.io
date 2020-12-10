@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Blog on </title>
+    <title>Data Scientist Blog on </title>
     <link>https://shinji1992.github.io/blog/</link>
-    <description>Recent content in My Blog on </description>
+    <description>Recent content in Data Scientist Blog on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shinji1992.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,14 @@
       <pubDate>Wed, 09 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shinji1992.github.io/blog/post_2/</guid>
-      <description>Docker Benefit  Version control (like Git) Easy to share your environment Keep cleaning on your laptop  Quick Start on Mac!!  Download Docker on your laptop. Turn on Docker. Open terminal. Pull docker image (you can choose a desired image from HERE). If you have no idea, do not worry! Just follow me :)  your_name:~$ docker pull jupyter/scipy-notebook Create a file where you want to work.  your_name:~$ mkdir FILE_NAME your_name:~$ cd FILE_NAME Create a container.</description>
+      <description>Docker Benefit   Version control (like Git)
+  Easy to share your environment
+  Keep cleaning on your laptop
+  Quick Start on Mac!!   Download Docker on your laptop.
+  Turn on Docker.
+  Open terminal.
+  Pull docker image (you can choose a desired image from HERE). If you have no idea, do not worry! Just follow me :)
+  your_name:~$ docker pull jupyter/scipy-notebook Create a file where you want to work.</description>
     </item>
     
     <item>

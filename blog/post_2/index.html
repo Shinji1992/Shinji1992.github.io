@@ -97,16 +97,30 @@
   <div class="content">
     <h2 id="docker-benefit">Docker Benefit</h2>
 <ul>
-<li>Version control (like Git)</li>
-<li>Easy to share your environment</li>
-<li>Keep cleaning on your laptop</li>
+<li>
+<p>Version control (like Git)</p>
+</li>
+<li>
+<p>Easy to share your environment</p>
+</li>
+<li>
+<p>Keep cleaning on your laptop</p>
+</li>
 </ul>
 <h2 id="quick-start-on-mac">Quick Start on Mac!!</h2>
 <ol>
-<li>Download <a href="https://www.docker.com/products/docker-desktop">Docker</a> on your laptop.</li>
-<li>Turn on Docker.</li>
-<li>Open terminal.</li>
-<li>Pull docker image (you can choose a desired image from <a href="https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html">HERE</a>). If you have no idea, do not worry! Just follow me :)</li>
+<li>
+<p>Download <a href="https://www.docker.com/products/docker-desktop">Docker</a> on your laptop.</p>
+</li>
+<li>
+<p>Turn on Docker.</p>
+</li>
+<li>
+<p>Open terminal.</p>
+</li>
+<li>
+<p>Pull docker image (you can choose a desired image from <a href="https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html">HERE</a>). If you have no idea, do not worry! Just follow me :)</p>
+</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">your_name:~$ docker pull jupyter/scipy-notebook
 </code></pre></div><ol start="5">
@@ -119,10 +133,20 @@ your_name:~$ cd FILE_NAME
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">your_name:~$ docker run -d --name CONTAINER_NAME -p 8888:8888 -v <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span><span style="color:#e6db74">:/home/jovyan/work&#34;</span> jupyter/scipy-notebook
 </code></pre></div><ol start="7">
-<li>Open <a href="http://127.0.0.1:8888/tree?">Jupyter Notebook</a> or <a href="http://127.0.0.1:8888/lab?">Jupyter Lab</a>.<br>
+<li>Check and copy passward (after taken)</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">your_name:~$ docker logs CONTAINER_NAME
+http://127.0.0.1:8888/?token<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;PASSWARD&#34;</span>
+</code></pre></div><ol start="8">
+<li>
+<p>Open <a href="http://127.0.0.1:8888/tree?">Jupyter Notebook</a> or <a href="http://127.0.0.1:8888/lab?">Jupyter Lab</a>.<br>
 Bang Bang Bang!!!! Now you can use Jupyter Notebook!! Enjoy!!<br>
-Note: files/folders can be shared through FILE_NAME which you created.</li>
-<li>Stop your container.</li>
+<img src="/images/jupyter.png" alt=""><br>
+Note: files/folders can be shared through FILE_NAME which you created.</p>
+</li>
+<li>
+<p>Stop your container.</p>
+</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">your_name:~$ docker stop CONTAINER_NAME
 </code></pre></div><p>Now you can shut down your laptop.</p>
