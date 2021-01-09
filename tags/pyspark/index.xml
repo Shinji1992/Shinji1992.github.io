@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pyspark on </title>
+    <link>https://shinji1992.github.io/tags/pyspark/</link>
+    <description>Recent content in Pyspark on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shinji1992.github.io/tags/pyspark/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quick Guide: Pyspark</title>
+      <link>https://shinji1992.github.io/blog/post_3/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shinji1992.github.io/blog/post_3/</guid>
+      <description>Prepare pyspark environment If you have already installed pyspark, skip here!
+Pull Jupyter Notebook for Pyspark via docker!
+If you do not know how to use docker, please follow Quick Guide: Docker for Jupyter Notebook.
+Note: only use &amp;lsquo;jupyter/pyspark-notebook&amp;rsquo; instead of &amp;lsquo;jupyter/scipy-notebook&amp;rsquo;. Easy right :)?
+Dataset Please use this dataset. If you have a dateset for regression problem, use your own it!!
+This dataset consists of time series, hourly electricity prices (DE/LU[€/MWh]), electricity consumption, and electricity generation.</description>
+    </item>
+    
+  </channel>
+</rss>
